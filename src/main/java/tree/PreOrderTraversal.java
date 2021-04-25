@@ -12,12 +12,24 @@ import java.util.Stack;
  * @date 2020/8/17 23:53
  */
 public class PreOrderTraversal {
+    /**
+     * 递归遍历
+     *
+     * @param root
+     * @return
+     */
     public static List<Integer> traverseWithRecursion(TreeNode root) {
         List<Integer> output = Lists.newArrayList();
         doTraverse(root, output);
         return output;
     }
 
+    /**
+     * 迭代遍历
+     *
+     * @param root
+     * @return
+     */
     public static List<Integer> traverseWithIteration(TreeNode root) {
         List<Integer> output = Lists.newArrayList();
         Stack<TreeNode> stack = new Stack<>();
